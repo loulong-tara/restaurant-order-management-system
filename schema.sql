@@ -12,3 +12,8 @@ CREATE TABLE Users (
 );
 
 ALTER TABLE Users ADD role ENUM('user', 'admin') DEFAULT 'user';
+
+CREATE TABLE Genres (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) UNIQUE NOT NULL
+);
